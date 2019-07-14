@@ -1,0 +1,10 @@
+<ngb-carousel *ngIf="data.images" [showNavigationArrows]="true" [showNavigationIndicators]="true">
+    <ng-template ngbSlide *ngFor="let image of data.images">
+      <img [src]="image.href" alt="Random slide">
+      <div class="carousel-caption">
+        <h3>{{data.name}}</h3>
+        
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  
