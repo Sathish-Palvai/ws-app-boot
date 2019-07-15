@@ -16,7 +16,7 @@ export class AppComponent {
  
   dialogData: Product = null;
  
-  $products: Observable<Product>;
+  $products: Observable<any>;
   constructor(
     private dataService: DataService,
     public dialog: MatDialog
