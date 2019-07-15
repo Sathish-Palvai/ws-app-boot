@@ -11,6 +11,7 @@ export class DataService {
   constructor(private httpClient: HttpClient) {}
 
   findProducts(): Observable<Product> {
+    
     return this.httpClient.get('http://localhost:3000/products')
     .pipe(map(res => res['groups']));
   }
